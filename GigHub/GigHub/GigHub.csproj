@@ -193,6 +193,10 @@
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Migrations\201804172018105_AddForeignKeyPropertiesToGig.cs" />
+    <Compile Include="Migrations\201804172018105_AddForeignKeyPropertiesToGig.Designer.cs">
+      <DependentUpon>201804172018105_AddForeignKeyPropertiesToGig.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\GigFormViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -317,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804161933052_PopulateGenresTable.resx">
       <DependentUpon>201804161933052_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804172018105_AddForeignKeyPropertiesToGig.resx">
+      <DependentUpon>201804172018105_AddForeignKeyPropertiesToGig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
