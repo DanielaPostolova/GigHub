@@ -51,7 +51,7 @@ namespace GigHub.Controllers
         }
 
         //
-        // GET: /Manage/Index
+        // GET: /Manage/Create
         public async Task<ActionResult> Index(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
