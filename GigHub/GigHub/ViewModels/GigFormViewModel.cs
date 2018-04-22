@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using GigHub.Models;
+using GigHub.IdentityModels.DomainModels;
 
 namespace GigHub.ViewModels
 {

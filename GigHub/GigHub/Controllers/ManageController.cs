@@ -3,10 +3,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using GigHub.IdentityModels.IdentityProviders;
+using GigHub.ViewModels.Identity.Manage;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using GigHub.Models;
 
 namespace GigHub.Controllers
 {
