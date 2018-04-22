@@ -186,49 +186,33 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Migrations\201804172018105_AddForeignKeyPropertiesToGig.cs" />
-    <Compile Include="Migrations\201804172018105_AddForeignKeyPropertiesToGig.Designer.cs">
-      <DependentUpon>201804172018105_AddForeignKeyPropertiesToGig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\FutureDate.cs" />
+    <Compile Include="ViewModels\Identity\Account\ExternalLoginConfirmationViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Account\ExternalLoginListViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Account\ForgotViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Account\LoginViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Account\RegisterViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Account\ResetPasswordViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Account\SendCodeViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Account\VerifyCodeViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Manage\AddPhoneNumberViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Manage\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Manage\ConfigureTwoFactorViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Manage\FactorViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Manage\ManageLoginsViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Manage\SetPasswordViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Manage\VerifyPhoneNumberViewModel.cs" />
     <Compile Include="ViewModels\GigFormViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804161130164_InitialModel.cs" />
-    <Compile Include="Migrations\201804161130164_InitialModel.Designer.cs">
-      <DependentUpon>201804161130164_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804161205576_CreateGigTable.cs" />
-    <Compile Include="Migrations\201804161205576_CreateGigTable.Designer.cs">
-      <DependentUpon>201804161205576_CreateGigTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804161211270_CreateGigTable1.cs" />
-    <Compile Include="Migrations\201804161211270_CreateGigTable1.Designer.cs">
-      <DependentUpon>201804161211270_CreateGigTable1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804161919276_OverrideConventionsForGigsAndGenres.cs" />
-    <Compile Include="Migrations\201804161919276_OverrideConventionsForGigsAndGenres.Designer.cs">
-      <DependentUpon>201804161919276_OverrideConventionsForGigsAndGenres.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804161933052_PopulateGenresTable.cs" />
-    <Compile Include="Migrations\201804161933052_PopulateGenresTable.Designer.cs">
-      <DependentUpon>201804161933052_PopulateGenresTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\ApplicationDbContext.cs" />
-    <Compile Include="Models\Genre.cs" />
-    <Compile Include="Models\Gig.cs" />
-    <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="ViewModels\Identity\Account\ForgotPasswordViewModel.cs" />
+    <Compile Include="ViewModels\Identity\Manage\IndexViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ValidTime.cs" />
@@ -309,24 +293,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804161130164_InitialModel.resx">
-      <DependentUpon>201804161130164_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804161205576_CreateGigTable.resx">
-      <DependentUpon>201804161205576_CreateGigTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804161211270_CreateGigTable1.resx">
-      <DependentUpon>201804161211270_CreateGigTable1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804161919276_OverrideConventionsForGigsAndGenres.resx">
-      <DependentUpon>201804161919276_OverrideConventionsForGigsAndGenres.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804161933052_PopulateGenresTable.resx">
-      <DependentUpon>201804161933052_PopulateGenresTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804172018105_AddForeignKeyPropertiesToGig.resx">
-      <DependentUpon>201804172018105_AddForeignKeyPropertiesToGig.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\GigHub.DataModels\GigHub.DataModels.csproj">
+      <Project>{5311155c-3f8b-48f8-9bbe-a4871a9f08ac}</Project>
+      <Name>GigHub.DataModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using GigHub.Models;
+using GigHub.IdentityModels.DomainModels;
 
 namespace GigHub.ViewModels
 {
