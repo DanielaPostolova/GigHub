@@ -41,7 +41,7 @@ namespace GigHub.Controllers
             {
                 ArtistId = User.Identity.GetUserId(),
                 DateTime = viewModel.GetDateTime(),
-                GenreId = viewModel.Genre,
+                GenreId = viewModel.GenreId,
                 Venue = viewModel.Venue
             };
 
