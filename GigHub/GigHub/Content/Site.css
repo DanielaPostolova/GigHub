@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -13,14 +13,14 @@
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
-    white-space: normal;
+     white-space: normal;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-    max-width: 280px;
+     max-width: 280px;
 }
 
 /*Bootstrap Overrides*/
@@ -30,26 +30,26 @@ textarea {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: white;
+     color: white;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover{
-    color: gray;
+.navbar-inverse .navbar-nav > li > a:hover {
+     color: gray;
 }
 
 
 .navbar-inverse .navbar-brand {
     color: white;
     font-size: 23px;
-    font-weight: bold 
+    font-weight: bold
 }
 
 .navbar-inverse .navbar-brand:hover {
-    color: gray;
+     color: gray;
 }
 
 body {
-    font-size: 17px;
+     font-size: 17px;
 }
 
 body,
@@ -64,12 +64,12 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 { 
-    font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+.h6 {
+     font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .form-group {
-    margin-bottom: 17px;
+     margin-bottom: 17px;
 }
 
 .form-control {
@@ -80,22 +80,21 @@ h6,
 }
 
 .form-control:focus {
-    box-shadow: none;
     -webkit-box-shadow: none;
+    box-shadow: none;
     border-color: #c71585;
 }
 
 .btn {
     font-size: 17px;
     padding: 8px 18px;
+    -ms-border-radius: 10px;
     border-radius: 10px;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #cd5c5c;
-}
+.navbar-inverse .navbar-nav > .open > a:focus { background-color: #cd5c5c; }
 
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
     border-top-color: #ffffff;
@@ -105,4 +104,43 @@ h6,
 .navbar-inverse .navbar-nav > .dropdown > a .caret:hover {
     border-top-color: grey;
     border-bottom-color: grey;
+}
+
+/*Page specific styles*/
+
+.gigs {
+    margin-bottom: 100px;
+    list-style: none;
+}
+
+.gigs > li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gigs > li .date {
+    background-color: #90ee90;
+    width: 60px;
+    text-align: center;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.gigs > li .date .day {
+    background-color: #f1ffe6;
+}
+
+.gigs > li .details {
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+.gigs > li .details .artist {
+    font-weight: bold;
+    display: block;
+}
+
+.gigs > li .details .genre {
+    font-size: 13px;
 }
