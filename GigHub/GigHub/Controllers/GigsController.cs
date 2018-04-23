@@ -24,7 +24,7 @@ namespace GigHub.Controllers
 
             var viewModel = new GigFormViewModel
             {
-                Genres = genres
+                GenresDropdownList = genres
             };
 
             return View(viewModel);
@@ -37,7 +37,7 @@ namespace GigHub.Controllers
         {
             if (!ModelState.IsValid)
             {
-                viewModel.Genres = _context.Genres.ToList();
+                viewModel.GenresDropdownList = _context.Genres.ToList();
                 return View("Create", viewModel);
             }
 

@@ -1,6 +1,6 @@
-﻿using System;
+﻿using GigHub.IdentityModels.IdentityProviders;
+using System;
 using System.ComponentModel.DataAnnotations;
-using GigHub.IdentityModels.IdentityProviders;
 
 namespace GigHub.IdentityModels.DomainModels
 {

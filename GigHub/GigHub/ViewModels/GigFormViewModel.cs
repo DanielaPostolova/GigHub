@@ -1,7 +1,7 @@
-﻿using System;
+﻿using GigHub.IdentityModels.DomainModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using GigHub.IdentityModels.DomainModels;
 
 namespace GigHub.ViewModels
 {
@@ -19,9 +19,10 @@ namespace GigHub.ViewModels
         public string Time { get; set; }
 
         [Required]
+        [Display(Name = "Genre")]
         public byte GenreId { get; set; }
 
-        public IEnumerable<Genre> Genres { get; set; }
+        public IEnumerable<Genre> GenresDropdownList { get; set; }
 
         public DateTime GetDateTime()
         {

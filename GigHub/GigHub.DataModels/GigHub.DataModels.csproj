@@ -94,6 +94,10 @@
     <Compile Include="Migrations\201804221042079_AddingGenresTable.Designer.cs">
       <DependentUpon>201804221042079_AddingGenresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804230702301_AddApplicationUserName.cs" />
+    <Compile Include="Migrations\201804230702301_AddApplicationUserName.Designer.cs">
+      <DependentUpon>201804230702301_AddApplicationUserName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -110,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804221042079_AddingGenresTable.resx">
       <DependentUpon>201804221042079_AddingGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804230702301_AddApplicationUserName.resx">
+      <DependentUpon>201804230702301_AddApplicationUserName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
