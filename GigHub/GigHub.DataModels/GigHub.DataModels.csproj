@@ -74,6 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainModels\Attendance.cs" />
     <Compile Include="IdentityProviders\ApplicationDbContext.cs" />
     <Compile Include="IdentityProviders\ApplicationSignInManager.cs" />
     <Compile Include="IdentityProviders\ApplicationUser.cs" />
@@ -98,6 +99,10 @@
     <Compile Include="Migrations\201804230702301_AddApplicationUserName.Designer.cs">
       <DependentUpon>201804230702301_AddApplicationUserName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804240803033_AddAttendance.cs" />
+    <Compile Include="Migrations\201804240803033_AddAttendance.Designer.cs">
+      <DependentUpon>201804240803033_AddAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -117,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804230702301_AddApplicationUserName.resx">
       <DependentUpon>201804230702301_AddApplicationUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240803033_AddAttendance.resx">
+      <DependentUpon>201804240803033_AddAttendance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

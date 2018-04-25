@@ -86,8 +86,6 @@ h6,
 }
 
 .btn {
-    font-size: 17px;
-    padding: 8px 18px;
     -ms-border-radius: 10px;
     border-radius: 10px;
 }
@@ -120,27 +118,54 @@ h6,
 
 .gigs > li .date {
     background-color: #90ee90;
-    width: 60px;
+    width: 70px;
+    padding: 5px;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
     -ms-border-radius: 10px;
     border-radius: 10px;
 }
 
 .gigs > li .date .day {
     background-color: #f1ffe6;
+    padding: 3px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .gigs > li .details {
     position: absolute;
     top: 0;
-    left: 70px;
+    left: 90px;
+    width: 150px;
+    height: 70px;
+    padding: 5px;
 }
 
-.gigs > li .details .artist {
-    font-weight: bold;
+.gigs > li .line {
+    position: relative;
+    height: 30px;
+}
+
+.gigs > li .details .line {
     display: block;
 }
 
-.gigs > li .details .genre {
+.gigs > li .details .line .artist {
+    font-weight: bold;
+}
+
+.gigs > li .details .line .btn {
+    position: absolute;
+    top: -8px;
+    left: 70px;
+    margin: 3px;
+}
+
+.gigs > li .details .line .genre {
     font-size: 13px;
+    position: absolute;
+    margin-right: 8px;
 }
