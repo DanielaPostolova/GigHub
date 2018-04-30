@@ -200,11 +200,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Dto\AttendaceDto.cs" />
+    <Compile Include="Dto\FollowingDto.cs" />
     <Compile Include="Utilities\FutureDate.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\Identity\Account\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="ViewModels\Identity\Account\ExternalLoginListViewModel.cs" />
     <Compile Include="ViewModels\Identity\Account\ForgotViewModel.cs" />

@@ -24,8 +24,8 @@ namespace GigHub.IdentityModels.Migrations
         
         public override void Down()
         {
-            DropForeignKey("dbo.Gigs", "ArtistId", "dbo.AspNetUsers");
-            DropIndex("dbo.Gigs", new[] { "ArtistId" });
+            DropForeignKey("dbo.Gigs", "FolloweeId", "dbo.AspNetUsers");
+            DropIndex("dbo.Gigs", new[] { "FolloweeId" });
             DropTable("dbo.Gigs");
         }
     }

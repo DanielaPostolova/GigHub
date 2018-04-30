@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DomainModels\Attendance.cs" />
+    <Compile Include="DomainModels\Following.cs" />
     <Compile Include="IdentityProviders\ApplicationDbContext.cs" />
     <Compile Include="IdentityProviders\ApplicationSignInManager.cs" />
     <Compile Include="IdentityProviders\ApplicationUser.cs" />
@@ -103,6 +104,10 @@
     <Compile Include="Migrations\201804240803033_AddAttendance.Designer.cs">
       <DependentUpon>201804240803033_AddAttendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804301051156_AddFollowingsTable.cs" />
+    <Compile Include="Migrations\201804301051156_AddFollowingsTable.Designer.cs">
+      <DependentUpon>201804301051156_AddFollowingsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -125,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804240803033_AddAttendance.resx">
       <DependentUpon>201804240803033_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804301051156_AddFollowingsTable.resx">
+      <DependentUpon>201804301051156_AddFollowingsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
